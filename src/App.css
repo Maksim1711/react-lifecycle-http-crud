@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+.card_conteiner {
+	display: flex;
+	padding: 20px;
+	flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card_content {
+	display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card_conteiner_header {
+	font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cards_wrappper {
+	list-style-type: none;
+	display: flex;
+	padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.btn.refresh {
+	align-items: center;
+	margin-left: 20px;
+	appearance: none;
+	width: 30px;
+	height: 10px;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+	cursor: pointer;
+}
+
+.new_card_input {
+	height: 100px;
+}
+
+.new_card {
+	position: relative;
+	border: 1px black solid;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 10px;
+}
+
+.new_card_btn_wrap {
+	position: absolute;
+	bottom: 20px;
+	right: 15px;
+}
+
+.card_text {
+	border: 1px black solid;
+	width: 100%;
+	height: 90%;
+
+}
+
+.card {
+	width: 15%;
+	height: 30vh;
+	margin: 20px;
+	position: relative;
+	border: 1px black solid;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.card_btn_del {
+	position: absolute;
+	top: 0px;
+	right: -20px;
 }
